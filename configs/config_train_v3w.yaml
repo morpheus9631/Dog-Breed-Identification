@@ -1,0 +1,36 @@
+# config_train.yaml
+
+WORK:
+  PATH: &work_path "D:\\GitWork\\dog_breed\\"
+              
+DATA:
+  PATH: "D:\\Dataset\\dog-breed-identification\\"
+  PATH_TEST: "D:\\Dataset\\dog-breed-identification\\test\\"
+  PATH_TRAIN: "D:\\Dataset\\dog-breed-identification\\train\\"
+  FNAME_LABELS: "labels.csv"
+
+PRETRAINED:
+  PATH: "D:\\GitWork\\dog_breed\\pretrained\\"
+  FNAME_PREMODEL: 'resnet50_20200926-2053_t9175_v9339.pth'
+
+PROCESSED:
+  PATH: "D:\\GitWork\\dog_breed\\processed\\"  
+
+OUTPUT:
+  PATH: "D:\\GitWork\\dog_breed\\output\\"
+
+TRAIN:
+  NUM_CLASSES: 0
+  NUM_EPOCHS : 3
+  BATCH_SIZE : 16
+  FRAC_FOR_TRAIN: 0.8
+  LEARNING_RATE: 0.001
+  MOMENTUM: 0.9
+  STEP_SIZE: 7
+  GAMMA: 0.1
+
+PREDICT:
+  BATCH_SIZE: 100
+  MODEL_PATH: "D:\\GitWork\\dog_breed\\pretrained\\"
+  MODEL_FILE: 'resnet50_20200926-2053_t9175_v9339.pth'
+  
