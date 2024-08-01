@@ -4,6 +4,7 @@
 
     Kaggle url: https://www.kaggle.com/competitions/dog-breed-identification
 
+
 ## Processed
 1. Read image ids and breeds from labels.csv.
 2. Create breed dictionary based on breed information.
