@@ -1,0 +1,10 @@
+Project:
+  name: Dog-Breed-Identification
+  version: 0.0.1
+
+Datasets:
+  path: datasets
+
+Saved_Model:
+  path: saved_model
+
