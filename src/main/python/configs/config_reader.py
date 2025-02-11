@@ -45,7 +45,9 @@ class ConfigReader:
     # -------------------------------------------------------------------------
         
     def get_config(self, key: str) -> Any:
-        """Get configuration value based on provided key"""
+        """
+        Get configuration value based on provided key
+        """
         config = self.config_data
         
         for part in key.split('.'):
@@ -66,7 +68,7 @@ class ConfigReader:
 if __name__ == "__main__":
     
     root_path = PathUtil.get_root_path()
-    print(f"Root path: {root_path}")
+    print(f"\nRoot path: {root_path}")
     
     resources_path = PathUtil.get_resources_path()
     print(f"\nResources path: {resources_path}")

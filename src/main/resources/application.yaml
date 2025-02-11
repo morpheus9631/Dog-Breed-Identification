@@ -2,9 +2,29 @@ Project:
   name: Dog-Breed-Identification
   version: 0.0.1
 
-Datasets:
-  path: datasets
+input:
+  path: D:\Kaggle\input\dog-breed-identification
+  file: labels.csv
 
-Saved_Model:
-  path: saved_model
+preprocess:
+  out_path: outputs
+  out_file:
+      breeds: breeds_preprocess.csv
+      labels: labels_preprocess.csv
 
+pretrain:
+  load: False
+  path:
+  model: 
+
+train:
+  data:
+    path: outputs
+    breeds_file: breeds_preprocess.csv
+    labels_file: labels_preprocess.csv
+  image:
+    path: D:\Kaggle\input\dog-breed-identification\train
+  batch_size: 6
+  frac_for_train: 0.8
+  num_breed_classes: 16
+  num_epochs: 20

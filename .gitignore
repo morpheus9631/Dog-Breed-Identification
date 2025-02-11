@@ -2,39 +2,24 @@
 **/__pycache__/
 *.py[cod]
 *$py.class
-configs/__pycache__/
-.ipynb_checkpoints/
 
-# Data:
-data/*
-!data/*.csv
-
-# Downloads
-downloads/*
+# Dataset:
+dataset/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
 Untitled.ipynb
 ipynb/Untitled*.ipynb
-
-# Pretrained Models
-pretrained/*
-!pretrained/*.pth
-
-# Processed
-processed/*
-!processed/*.csv
-!processed/*.npy
 
 # vsccode
 .vscode/
 
 # old codes
-olds/*
+src_old/
 
-# output
-output/*
+# outputs
+outputs/
 
-# all readme.md
-!**/readme.md
+# Saved_model
+saved_model
 

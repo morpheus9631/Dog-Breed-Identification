@@ -47,7 +47,7 @@ class PathUtil:
         if path_type not in valid_types:
             raise ValueError(f"Invalid type '{path_type}'.")
         
-        path_parts = ['src', path_type, ',resources']
+        path_parts = ['src', path_type, 'resources']
         resources_path = os.path.join(cls._root_path, *path_parts)
         
         if not os.path.exists(resources_path):
